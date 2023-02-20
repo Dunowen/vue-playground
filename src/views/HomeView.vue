@@ -1,9 +1,13 @@
 <script setup lang="ts">
-	import TheWelcome from "../components/TheWelcome.vue";
+	import ClickCounter from "../components/ClickCounter.vue";
 </script>
 
 <template>
-	<main>
-		<TheWelcome />
-	</main>
+	<ClickCounter :date="new Date()" />
 </template>
+
+<style scoped>
+	:root {
+		color: red;
+	}
+</style>
